@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0px 50px;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    
+    justify-content: space-between;
+    /* align-items: self-end; */
+    padding: 0px 30px;
+}
+header .logo{
+    margin-top: 1.9vh;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 7vh;
+}
+header .logo img{
+
+   
+    width: 100%;
+    height: 100%;
+}
+header nav{
+
+    margin-top: 20px;
+    display: flex;
+    color: #757575;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+}
+.main{
+    background: url('../../images/connexion.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section{
+    background-color: green;
+    opacity: 0.7;
+    padding:80px;
+    font-size: 20px;
+    padding-bottom: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+    align-items: center;
+
+}
+.section .phrase{
+    opacity: 1;
+    color: white;
+    font-size: 28px;
+}
+.search{
+    border: solid 1px;
+    width: 100%;
+    opacity: 1;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    height: 8vh;
+    font-size: 20px;
+    justify-content: center;
+    
+    padding: 5px;
+
+
+}
+.search input{
+    background: white;
+    opacity: 1;
+    width: 80%;
+    border: none;
+    outline: none;
+    height: 100%;
+
+}
+.search i{
+    /* border: solid; */
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    font-size: 20px;
+}
+.produits{
+    display: flex;
+   justify-content: space-between;
+    width: 100%;
+
+}
+.produits div{
+    width: 200px;
+    height: 100px;
+}
+.produits div img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    height: 25vh;
+display: flex;
+padding: 50px 80px;
+padding-bottom: 0;
+justify-content: space-between;
+    background-color:#262626;
+    color: white;
+    margin: 0;
+}
+footer .texte{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    width: 30%;
+}
+.texte .image{
+    width: 100px;
+
+}
+.image img{
+    width: 130%;
+}
+footer .cop{
+    display: flex;
+    padding-bottom: 5px;
+   
+    align-items: self-end;
+
+}
+footer .reseaux{
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10PX;
+
+}
+.reseaux h2{
+    height: 26px;
+    margin-bottom: 10px;
+   
+}
+.reseaux .r{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    
+
+}
+.reseaux a{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.header{
+    background-color: green;
+    margin-bottom: 20px;
+    
+    
+}
+.header nav{
+    color: white;
+   
+
+}
+main .titres{
+    color: green;
+    font-size: 20px;
+    padding: 10px 0px;
+    margin-left: 20px;
+    /* border: solid; */
+    margin-bottom: 20px;
+}
+main .medicaments{
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.medicaments .un{
+    display: flex;
+    justify-content: space-between;
+
+}
+.un .para, .un .doliprane,.un .maalox, .un .efferalgan{
+    width: 45%;
+    display: flex;
+    gap: 20px;
+
+}
+.para .image, .doliprane .image{
+    width: 200px;
+    height: 160px;
+    /* border: solid; */
+}
+.maalox .image {
+    width: 280px;
+    /* border: solid; */
+    height: 160px;
+}
+.efferalgan .image{
+    /* border: solid; */
+    width: 420px;
+    height: 160px;
+}
+.para img, .doliprane img,.maalox img, .efferalgan img{
+    width: 100%;
+    height: 100%;
+}
+.description{
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#footer-med{
+    height: 27vh;
+}
+.rr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#ser{
+    padding-left: 0px;
+    width: 80%;
+    padding: 0;
+}
+#ser i{
+   
+    margin:0 ;
+}
+.medicamen{
+    height: 50vh;
+}
+#para{
+    width: 80%;
+}
+.hhh {
+    font-size: 20px;
+    
+}
+.medic{
+    margin-left: 20px;
+}
+.ps{
+ 
+  
+    border: solid 1px;
+}
+.ps img{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.form .gauche{
+    background: url('../../images/connexion.png');
+    background-color: red;
+    border: solid  #BEC3C7;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+.form .droite{
+    color: #BEC3C7;
+    border: solid 1px;
+    border-top: solid 4px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    height: 100%;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.droite .un{
+    height: 10vh;
+    /* border: solid; */
+    width: 100%;
+    font-size: 20px;
+    
+}
+.un a{
+    color: green;
+    margin-left: 20px;
+}
+.droite .un .logo{
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+}
+.droite .deux{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+
+}
+.deux .input{
+    border: solid;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+.submit{
+    background-color: green;
+    color: white;
+    padding: 0px;
+    font-size: 20px;
+}
+.submit input{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+.input a{
+    text-decoration: none;
+}
+
+.droite .input input{
+    margin-left: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.droite .troi{
+    font-size: 15px;
+    height: 20%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #757575;
+}
+.troi .ico{
+    font-size: 15px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid; */
+    width: 40%;
+
+    align-items: center;
+}
+.deux .cous{
+font-size: 18px;
+    color: #757575;
+    border: none;
+}
+@media(max-width:700px){
+    .gauche{
+        display: none;
+    }
+   .form{
+   
+    padding: 0;
+    width: 100%;
+
+   }
+    .form .droite{
+    
+    
+    width: 100%;
+    margin: 0;
+   }
+}

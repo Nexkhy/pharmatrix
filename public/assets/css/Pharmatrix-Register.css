@@ -1,0 +1,229 @@
+/* Styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* border: solid; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* border: solid; */
+}
+
+/* Conteneur principal */
+
+.container {
+    
+    /* border: solid; */
+    display: flex;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+    /* overflow: hidden; */
+    position: relative;
+    height: 100%;
+}
+
+/* Section formulaire (partie gauche) */
+.form-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    z-index: 2;
+    background-color: white;
+}
+
+/* Logo */
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Titre */
+h1 {
+    color: green;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+/* Groupes de champs de formulaire */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95a5a6;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.input-group .icon:hover {
+    color: green;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #2c3e50;
+    transition: border-color 0.3s;
+}
+
+.input-group input:hover {
+    border-color: rgb(128, 0, 87);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: rgb(186, 11, 136);
+}
+
+/* Champs Nom et Prénom */
+.nom-prenom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nom-prenom .input-group {
+    width: 48%;
+}
+
+/* Champs Téléphone et Carte Vitale */
+.tel-map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tel-map .input-group {
+    width: 48%;
+}
+
+/* Séparateur */
+.separator {
+    height: 1px;
+    background-color: #ddd;
+    margin: 25px 0;
+    position: relative;
+}
+
+/* Bouton d'inscription */
+.signup-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.signup-btn:hover {
+    background-color: #ff1ea5;
+}
+
+/* Pied de formulaire */
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.form-footer .a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.form-footer .a:hover {
+    color: #d611d996;
+}
+
+.icon-reseaux {
+    font-size: 30px;
+    margin: 10px;
+    display: inline-block;
+    color: #7f8c8d;
+    transition: color 0.3s;
+}
+
+.icon-reseaux:hover {
+    color: rgb(221, 35, 150);
+}
+
+/* Section image (partie droite) */
+.image-container {
+    width: 50%;
+    background-image: url('../../pharma.png'); /* Image en arrière-plan */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        box-shadow: none;
+        background-image: url('/assets/images/pharma.png');
+    }
+    
+    .form-container {
+        width: 100%;
+        padding: 30px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .image-container {
+        display: none;;
+    }
+
+    .logo img {
+        max-width: 120px;
+        height: auto;
+        border-radius: 7px;
+    }
+
+    .icon-reseaux {
+        font-size: 24px;
+        margin: 5px;
+        color: green;
+        transition: color 0.3s;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
